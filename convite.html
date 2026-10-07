@@ -49,6 +49,7 @@
   .steps li { counter-increment: step; display: grid; grid-template-columns: 36px 1fr; gap: 12px; }
   .steps li::before { content: counter(step); width: 36px; height: 36px; border-radius: 50%; background: var(--brand); color: var(--on-brand); font-weight: 800; display: grid; place-items: center; }
   .cta { display: block; text-align: center; background: var(--brand); color: var(--on-brand); text-decoration: none; font-weight: 800; font-size: 18px; padding: 16px; border-radius: 16px; margin-top: 20px; }
+  .cta.secondary { background: var(--soft); color: var(--brand); margin-top: 8px; }
   .note { background: var(--accent-soft); color: var(--on-accent-soft); border-radius: 14px; padding: 12px 16px; font-size: 15px; margin-top: 16px; }
   footer { text-align: center; font-size: 14px; margin-top: 32px; }
   a { color: var(--brand); }
@@ -63,14 +64,16 @@
   <p class="lead">Da dieta à lista de compras, com o cupom do mercado conferido.</p>
 </section>
 
-<a class="cta" href="mailto:flavioaugustosilveira@gmail.com?subject=Quero%20testar%20o%20Comprato&body=Oi%2C%20Fl%C3%A1vio!%20Quero%20ajudar%20a%20testar%20o%20Comprato.%0A%0AMeu%20celular%20%C3%A9%3A%20Android%20%2F%20iPhone%0AE-mail%20da%20minha%20conta%20Google%20(o%20da%20Play%20Store)%3A%20">Quero testar</a>
+<a class="cta" href="mailto:flavioaugustosilveira@gmail.com?subject=Quero%20testar%20o%20Comprato&body=Oi%2C%20Fl%C3%A1vio!%20Quero%20ajudar%20a%20testar%20o%20Comprato%20no%20Android.%0A%0AE-mail%20da%20minha%20conta%20Google%20(o%20da%20Play%20Store)%3A%20">Quero testar no Android</a>
+<a class="cta secondary" href="#iphone">Tenho iPhone</a>
 
 <section class="card">
   <h2>O que é</h2>
   <ul class="features">
     <li><span class="icon" aria-hidden="true">🥗</span><div><strong>Monta sua dieta</strong>Refeições da semana com alimentos e quantidades. O app soma tudo.</div></li>
     <li><span class="icon" aria-hidden="true">🛒</span><div><strong>Gera a lista de compras</strong>Os totais da dieta viram lista, separada por categoria, para riscar no mercado.</div></li>
-    <li><span class="icon" aria-hidden="true">🧾</span><div><strong>Confere o cupom</strong>Lê o QR code ou a foto do cupom e mostra o que veio da sua lista e o total pago.</div></li>
+    <li><span class="icon" aria-hidden="true">🧾</span><div><strong>Confere o cupom</strong>Lê o QR code ou a foto do cupom, risca da lista o que você comprou e mostra o total pago.</div></li>
+    <li><span class="icon" aria-hidden="true">🎯</span><div><strong>Mostra o que fugiu da lista</strong>Separa o que estava na lista, o que entrou por impulso (com quanto custou) e o que ficou faltando.</div></li>
   </ul>
 </section>
 
@@ -89,17 +92,18 @@
 <section class="card">
   <h2>Como ajudar (Android)</h2>
   <ol class="steps">
-    <li><div><strong>Me mande o e-mail da sua conta Google</strong><br><span class="muted">O mesmo que você usa na Play Store. É só tocar em "Quero testar".</span></div></li>
+    <li><div><strong>Me mande o e-mail da sua conta Google</strong><br><span class="muted">O mesmo que você usa na Play Store. É só tocar em "Quero testar no Android".</span></div></li>
     <li><div><strong>Abra o link que eu te mandar</strong><br><span class="muted">Toque em "Tornar-se testador" e instale o Comprato pela Play Store.</span></div></li>
     <li><div><strong>Deixe instalado por 14 dias</strong><br><span class="muted">E abra de vez em quando: monte uma refeição, gere a lista e, se for ao mercado, leia o cupom.</span></div></li>
   </ol>
   <p class="note">Não sair do teste antes dos 14 dias faz toda a diferença: se o número cair abaixo de 12, a contagem recomeça.</p>
 </section>
 
-<section class="card">
+<section class="card" id="iphone">
   <h2>Tem iPhone?</h2>
-  <p>Também preciso! Toque em "Quero testar", escolha iPhone, e eu te mando o link do <strong>TestFlight</strong>, o app da Apple para testar apps antes do lançamento.</p>
+  <p>Também preciso! No iPhone o teste é pelo <strong>TestFlight</strong>, o app da Apple para testar apps antes do lançamento. Toque abaixo que eu te mando o link.</p>
   <p class="muted">O mais importante no iPhone: fotografar um cupom de mercado inteiro e me mandar um print do resultado.</p>
+  <a class="cta secondary" href="mailto:flavioaugustosilveira@gmail.com?subject=Quero%20testar%20o%20Comprato%20no%20iPhone&body=Oi%2C%20Fl%C3%A1vio!%20Tenho%20iPhone%20e%20quero%20ajudar%20a%20testar%20o%20Comprato.%20Me%20manda%20o%20link%20do%20TestFlight%3F">Quero testar no iPhone</a>
 </section>
 
 <section class="card">
@@ -107,7 +111,7 @@
   <p>Sem cadastro, sem login e sem anúncios. O que você coloca no app fica só no seu celular. Detalhes na <a href="privacy.html">política de privacidade</a>.</p>
 </section>
 
-<a class="cta" href="mailto:flavioaugustosilveira@gmail.com?subject=Quero%20testar%20o%20Comprato&body=Oi%2C%20Fl%C3%A1vio!%20Quero%20ajudar%20a%20testar%20o%20Comprato.%0A%0AMeu%20celular%20%C3%A9%3A%20Android%20%2F%20iPhone%0AE-mail%20da%20minha%20conta%20Google%20(o%20da%20Play%20Store)%3A%20">Quero testar</a>
+<a class="cta" href="mailto:flavioaugustosilveira@gmail.com?subject=Quero%20testar%20o%20Comprato&body=Oi%2C%20Fl%C3%A1vio!%20Quero%20ajudar%20a%20testar%20o%20Comprato%20no%20Android.%0A%0AE-mail%20da%20minha%20conta%20Google%20(o%20da%20Play%20Store)%3A%20">Quero testar no Android</a>
 
 <footer class="muted">Obrigado! · <a href="index.html">Suporte</a></footer>
 
