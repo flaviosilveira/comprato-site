@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teste o Comprato</title>
+<meta name="description" content="Me ajude a lançar o Comprato: um app que monta a lista de compras a partir da dieta e confere o cupom do mercado.">
+<meta property="og:title" content="Me ajuda a testar o Comprato?">
+<meta property="og:description" content="Da dieta à lista de compras, com o cupom conferido. Preciso de testadores por 14 dias para publicar na Play Store.">
+<meta property="og:image" content="https://flaviosilveira.github.io/comprato-site/img/compartilhar.jpg">
+<meta property="og:url" content="https://flaviosilveira.github.io/comprato-site/convite.html">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --text: #1B2A20; --muted: #5B6B60; --bg: #F4F7EF; --card: #FFFFFF;
+    --brand: #2E7D32; --on-brand: #FFFFFF; --soft: #E3EFDD; --border: #DDE6D6;
+    --accent-soft: #FFF1DC; --on-accent-soft: #8A4B00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #EEF4EC; --muted: #A3B3A7; --bg: #0E1811; --card: #17241A;
+      --brand: #6CC070; --on-brand: #0B1F0C; --soft: #223526; --border: #253829;
+      --accent-soft: #3A2A0B; --on-accent-soft: #FFD27A;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 500 17px/1.6 'Nunito', -apple-system, 'Segoe UI', Roboto, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 24px 16px 56px; }
+  h1, h2 { font-weight: 800; line-height: 1.2; }
+  h1 { font-size: 32px; margin: 16px 0 8px; }
+  h2 { font-size: 22px; margin: 0 0 12px; }
+  p { margin: 0 0 12px; }
+  .muted { color: var(--muted); }
+  .hero { text-align: center; padding: 8px 0 8px; }
+  .badge { width: 132px; height: 132px; border-radius: 50%; background: #E3EFDD; display: grid; place-items: center; margin: 0 auto; }
+  .badge img { width: 78%; }
+  .lead { font-size: 19px; color: var(--muted); }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 20px; margin-top: 20px; }
+  .features { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+  .features li { display: grid; grid-template-columns: 40px 1fr; gap: 12px; align-items: start; }
+  .features .icon { width: 40px; height: 40px; border-radius: 12px; background: var(--soft); display: grid; place-items: center; font-size: 20px; }
+  .features strong { display: block; font-weight: 800; }
+  .shots { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 2px 12px; margin: 20px -16px 0; padding-left: 16px; padding-right: 16px; }
+  .shots img { width: 62%; max-width: 230px; flex: none; border-radius: 18px; border: 1px solid var(--border); scroll-snap-align: center; }
+  .steps { counter-reset: step; list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+  .steps li { counter-increment: step; display: grid; grid-template-columns: 36px 1fr; gap: 12px; }
+  .steps li::before { content: counter(step); width: 36px; height: 36px; border-radius: 50%; background: var(--brand); color: var(--on-brand); font-weight: 800; display: grid; place-items: center; }
+  .cta { display: block; text-align: center; background: var(--brand); color: var(--on-brand); text-decoration: none; font-weight: 800; font-size: 18px; padding: 16px; border-radius: 16px; margin-top: 20px; }
+  .note { background: var(--accent-soft); color: var(--on-accent-soft); border-radius: 14px; padding: 12px 16px; font-size: 15px; margin-top: 16px; }
+  footer { text-align: center; font-size: 14px; margin-top: 32px; }
+  a { color: var(--brand); }
+</style>
+</head>
+<body>
+<main>
+
+<section class="hero">
+  <div class="badge"><img src="img/mascot.png" alt="Mascote do Comprato: um carrinho de compras levantando peso"></div>
+  <h1>Me ajuda a testar o Comprato?</h1>
+  <p class="lead">Da dieta à lista de compras, com o cupom do mercado conferido.</p>
+</section>
+
+<a class="cta" href="mailto:flavioaugustosilveira@gmail.com?subject=Quero%20testar%20o%20Comprato&body=Oi%2C%20Fl%C3%A1vio!%20Quero%20ajudar%20a%20testar%20o%20Comprato.%0A%0AMeu%20celular%20%C3%A9%3A%20Android%20%2F%20iPhone%0AE-mail%20da%20minha%20conta%20Google%20(o%20da%20Play%20Store)%3A%20">Quero testar</a>
+
+<section class="card">
+  <h2>O que é</h2>
+  <ul class="features">
+    <li><span class="icon" aria-hidden="true">🥗</span><div><strong>Monta sua dieta</strong>Refeições da semana com alimentos e quantidades. O app soma tudo.</div></li>
+    <li><span class="icon" aria-hidden="true">🛒</span><div><strong>Gera a lista de compras</strong>Os totais da dieta viram lista, separada por categoria, para riscar no mercado.</div></li>
+    <li><span class="icon" aria-hidden="true">🧾</span><div><strong>Confere o cupom</strong>Lê o QR code ou a foto do cupom e mostra o que veio da sua lista e o total pago.</div></li>
+  </ul>
+</section>
+
+<div class="shots" aria-label="Telas do Comprato">
+  <img src="img/3-dieta.jpg" alt="Tela da dieta com refeições e alimentos" loading="lazy">
+  <img src="img/4-totais.jpg" alt="Totais da semana para comprar" loading="lazy">
+  <img src="img/5-lista.jpg" alt="Lista de compras por categoria" loading="lazy">
+  <img src="img/7-cupom-resultado.jpg" alt="Resultado da leitura do cupom" loading="lazy">
+</div>
+
+<section class="card">
+  <h2>Por que preciso de você</h2>
+  <p>Para publicar na Play Store, o Google exige que pelo menos <strong>12 pessoas</strong> testem o app por <strong>14 dias seguidos</strong>. Você ganha o app antes de todo mundo e ainda me ajuda a lançar.</p>
+</section>
+
+<section class="card">
+  <h2>Como ajudar (Android)</h2>
+  <ol class="steps">
+    <li><div><strong>Me mande o e-mail da sua conta Google</strong><br><span class="muted">O mesmo que você usa na Play Store. É só tocar em "Quero testar".</span></div></li>
+    <li><div><strong>Abra o link que eu te mandar</strong><br><span class="muted">Toque em "Tornar-se testador" e instale o Comprato pela Play Store.</span></div></li>
+    <li><div><strong>Deixe instalado por 14 dias</strong><br><span class="muted">E abra de vez em quando: monte uma refeição, gere a lista e, se for ao mercado, leia o cupom.</span></div></li>
+  </ol>
+  <p class="note">Não sair do teste antes dos 14 dias faz toda a diferença: se o número cair abaixo de 12, a contagem recomeça.</p>
+</section>
+
+<section class="card">
+  <h2>Tem iPhone?</h2>
+  <p>Também preciso! Toque em "Quero testar", escolha iPhone, e eu te mando o link do <strong>TestFlight</strong>, o app da Apple para testar apps antes do lançamento.</p>
+  <p class="muted">O mais importante no iPhone: fotografar um cupom de mercado inteiro e me mandar um print do resultado.</p>
+</section>
+
+<section class="card">
+  <h2>Sua privacidade</h2>
+  <p>Sem cadastro, sem login e sem anúncios. O que você coloca no app fica só no seu celular. Detalhes na <a href="privacy.html">política de privacidade</a>.</p>
+</section>
+
+<a class="cta" href="mailto:flavioaugustosilveira@gmail.com?subject=Quero%20testar%20o%20Comprato&body=Oi%2C%20Fl%C3%A1vio!%20Quero%20ajudar%20a%20testar%20o%20Comprato.%0A%0AMeu%20celular%20%C3%A9%3A%20Android%20%2F%20iPhone%0AE-mail%20da%20minha%20conta%20Google%20(o%20da%20Play%20Store)%3A%20">Quero testar</a>
+
+<footer class="muted">Obrigado! · <a href="index.html">Suporte</a></footer>
+
+</main>
+</body>
+</html>
